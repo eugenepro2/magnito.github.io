@@ -27,7 +27,7 @@ gulp.task('iconfont', function() {
         }))
         .on('glyphs', function(glyphs, options) {
             props = _.assign(fontProps, { glyphs: glyphs });
-            gulp.src(__dirname + '/_iconfont.s<% if (css === 'sass') { %>c<% } %>ss')
+            gulp.src(__dirname + '/_iconfont.scss')
                 .pipe(consolidate('lodash', props))
                 .pipe(gulp.dest(config.src.sassGen));
             // generate icons preview
