@@ -93,8 +93,11 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
-    .icon-facebook:before {
+    .icon-contact:before {
       content: "\EA01";
+    }
+    .icon-phonecall:before {
+      content: "\EA02";
     }
   </style>
 </head>
@@ -109,10 +112,18 @@
   <ul class="icons-list">
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-facebook" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".icon-contact" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
       <div class="icon-container">
-        <i class="icon icon-facebook"></i>
+        <i class="icon icon-contact"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-phonecall" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+      <div class="icon-container">
+        <i class="icon icon-phonecall"></i>
       </div>
     </li>
     
@@ -140,4 +151,4 @@
     count.innerHTML = icons.length;
   </script>
 </body>
-</html>
+</html>
