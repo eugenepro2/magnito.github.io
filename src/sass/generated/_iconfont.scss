@@ -11,6 +11,7 @@
 
 $icon-contact: "\EA01";
 $icon-phonecall: "\EA02";
+$icon-vk-social-network-logo: "\EA03";
 
 
 %icon {
@@ -31,4 +32,5 @@ $icon-phonecall: "\EA02";
 
 .icon-contact:before { content: $icon-contact; }
 .icon-phonecall:before { content: $icon-phonecall; }
+.icon-vk-social-network-logo:before { content: $icon-vk-social-network-logo; }
 
