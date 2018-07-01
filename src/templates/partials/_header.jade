@@ -2,24 +2,54 @@
 header.header
   .header__toolbar
     .container
-      .row
+      .row.middle-xs
         .col-md-2
-          .header__toolbar__mail
+          a.header__mail(href="mailto:info@fabrikamagnitov.ru") 
             i.icon.icon-contact
-            a(href="mailto:info@fabrikamagnitov.ru") info@fabrikamagnitov.ru
-        .col-md-7
-          .header__toolbar__call
-            i.icon.icon-phonecall
-            a(href="tel:84957830407") 8 (495) 783-04-07
-            a(href="#").header__toolbar__call__button Заказать звонок
-        .col-md-2
-          .header__tolbar__social
+            | info@fabrikamagnitov.ru
+        .col-md-7.flex.middle-xs
+          a.header__phone(href="tel:84957830407") 
+            i.icon.icon-phone
+            | 8 (495) 783-04-07
+          a(href="#").header__callback Заказать звонок
+        .col-md-3
+          .header__social
             ul
-              ui
+              li
                 a(href="#") 
-                  i.icon-vk-social-network-logo
+                  i.icon.icon-vk
+                a(href="#") 
+                  i.icon.icon-youtube
+                a(href="#") 
+                  i.icon.icon-plus
+                a(href="#") 
+                  i.icon.icon-facebook
+                a(href="#") 
+                  i.icon.icon-twitter
+                a(href="#") 
+                  i.icon.icon-od
   .header__primary
     .container
-      .row
-        .col-md-12
+      .row.middle-xs
+        .col-md-3
+          .logo
+            img(src="img/logo.png", alt="")
+        .col-md-8
+          nav
+            ul
+              li.active
+                a(href="#") Онлайн заявка
+              li
+                a(href="#") Заказать просчёт
+              li
+                a(href="#") Технические требования
+              li
+                a(href="#") Задать вопрос
+        .col-md-1
+          .header__tools
+            .header__tools__search
+              i.icon.icon-search
+            .header__tools__burger
+              div
+
 //END header

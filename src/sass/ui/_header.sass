@@ -1,47 +1,91 @@
-.header__toolbar
-  width: 100%
-  height: 50px
-  mix-blend-mode: undefined
-  background-color: $greyish-brown
-  display: flex
-  align-items: center
-  color: $white-six
+.header
+  &__toolbar
+    width: 100%
+    height: 50px
+    mix-blend-mode: undefined
+    background-color: $greyish-brown
+    display: flex
+    align-items: center
+    color: $white-six
+  &__primary
+    padding: 20px
   &__mail
     font-size: 15px
     display: flex
     align-items: center
+    font-size: 15px
+    letter-spacing: 0.9px
+    color: $white
+    font-weight: 300
     i
       margin-right: 9px
-    a
-      font-size: 15px
-      letter-spacing: 0.9px
-      color: $white
-  &__call
-    display: flex
+  &__phone
+    display: inline-flex
     align-items: center
     margin-left: 50px
-    a
-      font-size: 18px
-      color: $white
+    font-size: 18px
+    color: $white
+    text-decoration: none
     i
-      margin-right: 11px
-    &__button
-      width: 130px
-      height: 30px
-      text-align: center
-      text-decoration: none
-      background-image: linear-gradient(165deg, $tealish, $greenish-teal)
-      border-radius: 15px
-      margin-left: 15px
-      display: flex
-      align-items: center
-      justify-content: center
-      font-size: 11px
-      font-weight: bold
-      margin-bottom: 6px
+      margin-right: 10px
+  &__callback
+    width: 130px
+    height: 30px
+    text-align: center
+    text-decoration: none
+    background-image: linear-gradient(165deg, $tealish, $greenish-teal)
+    border-radius: 15px
+    margin-left: 15px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    font-size: 11px
+    font-weight: bold
+    color: $white
   &__social
     ul
       display: flex
       flex-direction: row
-      ui
-        color: $white
+      justify-content: flex-end
+      a
+        color: rgba($white, 0.5)
+        text-decoration: none
+        font-size: 15px
+        +tr
+        &:not(:last-child)
+          margin-right: 20px
+        &:hover
+          color: $white
+  .logo
+    width: 240px
+    img
+      width: 100%
+  nav
+    ul
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        &.active
+          a
+            color: $lipstick-five
+            &:before
+              opacity: 1
+      a
+        font-size: 18px
+        color: $greyish-brown
+        position: relative
+        +tr
+        &:before
+          content: ''
+          width: 100%
+          height: 2px
+          background: $lipstick-five
+          position: absolute
+          bottom: -43px
+          opacity: 0
+          +tr
+        &:hover
+          color: $lipstick-five
+          &:before
+            opacity: 1

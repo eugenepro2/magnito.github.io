@@ -10,8 +10,14 @@
 }
 
 $icon-contact: "\EA01";
-$icon-phonecall: "\EA02";
-$icon-vk-social-network-logo: "\EA03";
+$icon-facebook: "\EA02";
+$icon-od: "\EA03";
+$icon-phone: "\EA04";
+$icon-plus: "\EA05";
+$icon-search: "\EA06";
+$icon-twitter: "\EA07";
+$icon-vk: "\EA08";
+$icon-youtube: "\EA09";
 
 
 %icon {
@@ -31,6 +37,11 @@ $icon-vk-social-network-logo: "\EA03";
 }
 
 .icon-contact:before { content: $icon-contact; }
-.icon-phonecall:before { content: $icon-phonecall; }
-.icon-vk-social-network-logo:before { content: $icon-vk-social-network-logo; }
-
+.icon-facebook:before { content: $icon-facebook; }
+.icon-od:before { content: $icon-od; }
+.icon-phone:before { content: $icon-phone; }
+.icon-plus:before { content: $icon-plus; }
+.icon-search:before { content: $icon-search; }
+.icon-twitter:before { content: $icon-twitter; }
+.icon-vk:before { content: $icon-vk; }
+.icon-youtube:before { content: $icon-youtube; }
