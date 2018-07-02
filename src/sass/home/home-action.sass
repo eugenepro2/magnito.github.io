@@ -1,0 +1,51 @@
+.home-action
+  padding: 120px 0
+  &__content
+    background: url('../img/home/home-action-bg.png') no-repeat
+    background-size: cover
+    height: 350px
+    padding: 60px 15px
+    ul
+      +center-column
+      margin-bottom: 50px
+    li
+      font-size: 23.5px
+      font-weight: 500
+      line-height: 1.42
+      letter-spacing: 0.6px
+      color: $lipstick-three
+    .btn
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      height: 55px
+  &__label
+    position: relative
+    margin-top: 18px
+    h2
+      font-size: 58px
+      font-weight: 900
+      line-height: 1.43
+      letter-spacing: 1.5px
+      color: $white
+      position: relative
+      z-index: 1
+      padding-left: 60px
+      &:before
+        content: ''
+        width: 600px
+        height: 120px
+        background: url('../img/home/home-action-label.png') no-repeat
+        background-size: contain
+        position: absolute
+        left: -19px
+        top: 0
+        z-index: -1
+  p
+    line-height: 1.44
+    letter-spacing: 0.5px
+    color: $black
+    font-size: 18px
+    margin-top: 60px
+    display: block
+    padding-left: 50px

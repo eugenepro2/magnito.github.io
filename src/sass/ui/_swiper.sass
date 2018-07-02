@@ -1,0 +1,22 @@
+.swiper-container
+  width: 100%
+  height: 100%
+  .swiper-pagination
+    &-bullet
+      width: 6px
+      height: 6px
+      background: $lipstick-five
+      margin: 0 25px !important
+      position: relative
+      &:before
+        content: ''
+        width: 26px
+        height: 26px
+        display: block
+        border: 1px solid transparent
+        border-radius: 100%
+        +vcenter
+        +tr
+      &-active
+        &:before
+          border: 1px solid $lipstick-five
