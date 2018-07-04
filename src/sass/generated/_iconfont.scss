@@ -11,19 +11,20 @@
 
 $icon-clock: "\EA01";
 $icon-contact: "\EA02";
-$icon-down-arrow: "\EA03";
-$icon-facebook: "\EA04";
-$icon-left-arrow: "\EA05";
-$icon-location: "\EA06";
-$icon-mail: "\EA07";
-$icon-od: "\EA08";
-$icon-phone: "\EA09";
-$icon-plus: "\EA0A";
-$icon-right-arrow: "\EA0B";
-$icon-search: "\EA0C";
-$icon-twitter: "\EA0D";
-$icon-vk: "\EA0E";
-$icon-youtube: "\EA0F";
+$icon-down-arrow-1: "\EA03";
+$icon-down-arrow: "\EA04";
+$icon-facebook: "\EA05";
+$icon-left-arrow: "\EA06";
+$icon-location: "\EA07";
+$icon-mail: "\EA08";
+$icon-od: "\EA09";
+$icon-phone: "\EA0A";
+$icon-plus: "\EA0B";
+$icon-right-arrow: "\EA0C";
+$icon-search: "\EA0D";
+$icon-twitter: "\EA0E";
+$icon-vk: "\EA0F";
+$icon-youtube: "\EA10";
 
 
 %icon {
@@ -44,6 +45,7 @@ $icon-youtube: "\EA0F";
 
 .icon-clock:before { content: $icon-clock; }
 .icon-contact:before { content: $icon-contact; }
+.icon-down-arrow-1:before { content: $icon-down-arrow-1; }
 .icon-down-arrow:before { content: $icon-down-arrow; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-left-arrow:before { content: $icon-left-arrow; }
