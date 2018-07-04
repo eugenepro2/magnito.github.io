@@ -1,0 +1,60 @@
+.home-hit
+  padding-bottom: 130px
+  h2
+    font-size: 76px
+    font-weight: bold
+    line-height: 0.98
+    color: $lipstick
+    position: relative 
+    margin-top: 20px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -80px
+      width: 200px
+      height: 10px
+      background-color: $lipstick
+    p
+      line-height: 1.05
+      letter-spacing: -1.9px
+      color: $dark
+      font-size: 76px
+  &__title
+    padding: 120px 0
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark
+      padding-bottom: 20px
+  &__swiper
+    position: relative
+    +center-column
+    h3
+      font-size: 30px
+      font-weight: bold
+      line-height: 1.87
+      letter-spacing: 0.8px
+      display: inline-block
+      color: $dark
+      position: relative
+      margin-bottom: 70px
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0px
+        z-index: 2
+        width: 50px
+        height: 3px
+        background-color: $lipstick-five
+        left: 0
+    .swiper-slide
+      +center
+    .swiper-button
+      &-next, &-prev
+        i
+          color: $dark
+          font-size: 50px
+      &-next
+        right: 30px

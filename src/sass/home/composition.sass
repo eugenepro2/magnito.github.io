@@ -1,0 +1,64 @@
+.home-composition
+  padding: 120px
+  &__content
+    position: relative
+    +center
+  img
+    height: 430px
+  &__block
+    position: absolute
+    max-width: 250px
+    &:before
+      content: ''
+      height: 1px
+      width: 245px
+      background: $lipstick-six
+      position: absolute
+      left: 0
+      bottom: -30px
+    &-1
+      left: 70px
+      top: 0
+    &-2
+      left: 0px
+      bottom: 43%
+      &:before
+        width: 315px
+    &-3
+      top: 30%
+      right: 0px
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      &:before
+        width: 240px
+        right: 0
+        left: auto
+      p
+        text-align: right
+    h4
+      font-size: 18px
+      font-weight: bold
+      line-height: 3.11
+      letter-spacing: 0.5px
+      color: $dark
+      position: relative
+      margin-bottom: -10px
+      &:after
+        content: ''
+        position: absolute
+        left: -40px
+        top: 15px
+        width: 6px
+        height: 6px
+        background: $lipstick-seven
+        border-radius: 100%
+        border: 10px solid $white
+        display: block
+        box-sizing: content-box
+        box-shadow: 0 0 0 2px $lipstick-five
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark

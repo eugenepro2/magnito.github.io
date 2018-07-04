@@ -9,18 +9,21 @@
   font-style: normal;
 }
 
-$icon-contact: "\EA01";
-$icon-down-arrow: "\EA02";
-$icon-facebook: "\EA03";
-$icon-left-arrow: "\EA04";
-$icon-od: "\EA05";
-$icon-phone: "\EA06";
-$icon-plus: "\EA07";
-$icon-right-arrow: "\EA08";
-$icon-search: "\EA09";
-$icon-twitter: "\EA0A";
-$icon-vk: "\EA0B";
-$icon-youtube: "\EA0C";
+$icon-clock: "\EA01";
+$icon-contact: "\EA02";
+$icon-down-arrow: "\EA03";
+$icon-facebook: "\EA04";
+$icon-left-arrow: "\EA05";
+$icon-location: "\EA06";
+$icon-mail: "\EA07";
+$icon-od: "\EA08";
+$icon-phone: "\EA09";
+$icon-plus: "\EA0A";
+$icon-right-arrow: "\EA0B";
+$icon-search: "\EA0C";
+$icon-twitter: "\EA0D";
+$icon-vk: "\EA0E";
+$icon-youtube: "\EA0F";
 
 
 %icon {
@@ -39,10 +42,13 @@ $icon-youtube: "\EA0C";
   display: inline-block;
 }
 
+.icon-clock:before { content: $icon-clock; }
 .icon-contact:before { content: $icon-contact; }
 .icon-down-arrow:before { content: $icon-down-arrow; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-left-arrow:before { content: $icon-left-arrow; }
+.icon-location:before { content: $icon-location; }
+.icon-mail:before { content: $icon-mail; }
 .icon-od:before { content: $icon-od; }
 .icon-phone:before { content: $icon-phone; }
 .icon-plus:before { content: $icon-plus; }
