@@ -1,0 +1,134 @@
+.processes
+  padding-bottom: 100px
+  .heading
+    margin: 0
+    margin-bottom: 35px
+    justify-content: flex-start
+    h2
+      text-align: left
+      line-height: 1
+      &:before
+        bottom: -10px
+        left: -5px
+      a
+        color: $lipstick-five
+  &__block
+    border-top: 1px solid rgba($dark, 0.15)
+    padding-top: 85px
+    padding-bottom: 45px
+    &:first-child
+      border: none
+    &__stage
+      margin-top: 120px
+      width: calc(100% - 15px)
+      &__text
+        h3
+          font-size: 24px
+          font-weight: bold
+          line-height: 0.92
+          letter-spacing: 0.6px
+          color: $lipstick-five
+          margin-bottom: 30px
+        p
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0.4px
+          color: $dark
+      &__img
+        position: relative
+        height: 100%
+        &:before
+          content: ''
+          position: absolute
+          right: 10px
+          height: 100%
+          width: 218px
+          border-radius: 5px
+          background-image: linear-gradient(135deg, $lipstick-five, $white-seven)
+        img
+          position: relative
+          top: 50%
+          transform: translate(0, -50%)
+          border-radius: 5px
+          width: 100%
+    &__video
+      margin-bottom: 120px
+      margin-top: 35px
+      .heading
+        justify-content: center
+        margin-bottom: 60px
+      h4
+        font-size: 24px
+        font-weight: bold
+        letter-spacing: 0.6px
+        color: $dark
+        text-align: center
+        margin-bottom: 40px
+        a
+          color: $lipstick-five
+      &__content
+        width: 100%
+        height: 250px
+        display: block
+        border-radius: 25px
+        overflow: hidden
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(0, 0, 0, 0.8)
+          +tr
+        img
+          width: 110%
+        i
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+          color: rgba($white, 0.6)
+          font-size: 50px
+          +tr
+        &:hover
+          &:before
+            background: rgba(0, 0, 0, 0.45)
+          i
+            color: $white
+      p
+        font-size: 15px
+        line-height: 1.47
+        letter-spacing: 0.4px
+        text-align: center
+        color: $dark
+        padding-top: 30px
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark-three
+      padding-bottom: 20px
+      a
+        font-weight: 500
+        color: #df1f59
+    h4
+      font-weight: 500
+      color: $lipstick-nine
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      margin-bottom: 20px
+  .block__img
+    width: calc(100% - 20px)
+  &__phone
+    +center
+    margin-bottom: 60px
+    a
+      font-size: 80px
+      letter-spacing: 2px
+      background-image: linear-gradient(345deg, #8016a7, #e01f59), linear-gradient($dark-three, $dark-three)
+      background-clip: content-box
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
