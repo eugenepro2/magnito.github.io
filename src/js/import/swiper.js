@@ -8,8 +8,14 @@ var swiper = new Swiper('.swiper-intro', {
   },
 });
 
+//home-kinds
+var swiper1 = new Swiper('.home-kinds__swiper', {
+  loop: true,
+  spaceBetween: 30,
+});
+
 //sentence
-var swiper = new Swiper('.swiper-sentence', {
+var swiper2 = new Swiper('.swiper-sentence', {
   pagination: {
     el: '.swiper-pagination-sentence',
     clickable: true,
@@ -21,9 +27,15 @@ var swiper = new Swiper('.swiper-sentence', {
 });
 
 //hit
-var swiper = new Swiper('.swiper-hit', {
+var swiper3 = new Swiper('.swiper-hit', {
   navigation: {
     nextEl: '.swiper-hit-next',
     prevEl: '.swiper-hit-prev',
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
 });

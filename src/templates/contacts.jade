@@ -1,0 +1,60 @@
+---
+title: Контакты
+---
+extends layouts/_layout
+block content
+  +breadcrumbs(['Главная', 'Контакты'])
+  .contacts
+    .container
+      .row
+        .col-xs-12
+          .heading
+            h2 Наши контакты
+          h3 Главный офис и Производство
+        .col-xs-3
+          p
+            i.icon.icon-location
+            | Московская область г. Химки, Нагорное шоссе д. 2
+        .col-xs-3
+          p
+            i.icon.icon-clock
+            | Режим работы
+            span Понедельник-Пятница: <br>
+              | с
+              b 09.00 
+              | до
+              b 18.00
+        .col-xs-3
+          a(href="mailto:info@fabrikamagnitov.ru")
+            i.icon.icon-mail
+            | info@fabrikamagnitov.ru
+        .col-xs-3
+          a(href="tel:84957830407")
+            i.icon.icon-phone
+            | 8 (495) 783-04-07
+        .col-xs-12
+          .contacts__map
+
+      .row.center-xs
+        .col-xs-12
+          h3 Офис в Москве
+        .col-xs-3.start-xs
+          p
+            i.icon.icon-location
+            | г. Москва, <br>ул. Авангардная, 3
+        .col-xs-3.col-xs-offset-1.start-xs
+          p
+            i.icon.icon-clock
+            | Режим работы
+            span Понедельник-Пятница: <br>
+              | с
+              b 09.00 
+              | до
+              b 18.00
+        .col-xs-3.col-xs-offset-1.start-xs
+          a(href="mailto:office@fabrikamagnitov.ru")
+            i.icon.icon-mail
+            | office@fabrikamagnitov.ru
+        .col-xs-12  
+          .contacts__map
+  include ./shares/calculation

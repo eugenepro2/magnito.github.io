@@ -1,21 +1,35 @@
 .intro
   margin-top: 60px
+  +r(767)
+    margin-top: 25px
   h4
     font-size: 30px
     font-weight: 500
     letter-spacing: 0.8px
     color: $charcoal-grey-three
+    +r(1024)
+      font-size: 22px
+    +r(767)
+      font-size: 20px
   h2
     font-weight: bold
     font-size: 80px
     letter-spacing: normal
     color: $lipstick
     text-transform: uppercase
+    +r(1024)
+      font-size: 56px
+    +r(767)
+      font-size: 42px
   h3
     font-size: 56px
     color: $dark-two
     letter-spacing: -0.6px
     text-transform: uppercase
+    +r(1024)
+      font-size: 32px
+    +r(767)
+      font-size: 24px
   p
     font-size: 15px
     line-height: 1.47
@@ -25,11 +39,22 @@
     max-width: 410px
     margin-bottom: 50px
     margin-top: 30px
+    +r(767)
+      padding: 0 40px
+      font-size: 12px
+      text-align: center
   .swiper-slide
     background-repeat: no-repeat
     background-size: cover
     padding: 90px 0
+    +r(767)
+      .container
+        padding: 0
     img
-      width: 440px
+      max-width: 440px
+      width: 100%
+      +r(767)
+        padding: 0 20px
+        padding-top: 50px
   .swiper-pagination
     margin-bottom: 20px

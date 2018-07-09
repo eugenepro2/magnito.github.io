@@ -6,12 +6,27 @@ body
   width: 100% !important
   margin: 0 auto
   height: 100%
+  +r(1024)
+    padding: 0 15px
 .row
   height: 100%
 a
   text-decoration: none
 .flex
   display: flex
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+	.hidden-sm
+		display: none !important
++rmin(1200)
+	.hidden-md
+		display: none !important
+
+
 
 .heading
   +center-x
@@ -25,6 +40,12 @@ a
     color: $dark
     position: relative
     display: inline-block
+    +r(1024)
+      font-size: 26px
+      line-height: 1
+      padding-bottom: 15px
+    +r(767)
+      font-size: 22px
     &:before
       position: absolute
       left: 0
@@ -33,7 +54,6 @@ a
       width: 50px 
       height: 3px
       background: $lipstick-five
-
 .btn
   font-size: 20px
   font-weight: 500
@@ -47,7 +67,10 @@ a
   +center
   display: inline-flex
   text-transform: uppercase
-  
+  +r(1024)
+    font-size: 16px
+    padding: 0 35px
+    height: 55px
 
 .block__img
   position: relative

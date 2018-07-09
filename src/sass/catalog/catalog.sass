@@ -1,0 +1,95 @@
+.catalog
+  padding-top: 90px
+  background-color: #fbfbfb
+  .home-hit__swiper
+    padding-bottom: 100px
+    background: $white
+    padding-top: 120px
+  .heading
+    justify-content: flex-start
+    h2
+      line-height: 1
+      text-align: left
+      padding-bottom: 10px
+      a
+        color: $lipstick-five
+  .block__img
+    float: right
+    width: 345px
+    margin-left: 30px
+    margin-bottom: 90px
+    &__content
+      img
+        width: calc(100% - 30px)
+        position: relative
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+  &__filter
+    margin-bottom: 80px
+    &__block
+      height: 270px
+      border-radius: 25px
+      background-color: $white
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25)
+      +center-column
+      padding: 20px 10px
+      margin-bottom: 30px
+      position: relative
+      overflow: hidden
+      +tr
+      &:hover
+        transform: scale(1.07)
+        box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.25)
+      img
+        height: 170px
+      p
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.22
+        letter-spacing: 0.5px
+        text-align: center
+        color: $greyish-brown-three
+        padding-top: 15px
+        span
+          font-size: 21px
+          font-weight: bold
+          line-height: 1.5
+          letter-spacing: 0.6px
+          color: $rouge-two
+          display: inline-block
+  &__info
+    position: relative
+    z-index: 1
+    border-bottom: 1px solid rgba($dark, 0.15)
+    padding-bottom: 25px
+    padding-top: 70px
+    &:last-child
+      border-bottom: none
+    &-secondary
+      .block__img
+        float: left
+        margin-right: 30px
+        margin-top: 20px
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark-three
+      padding-bottom: 25px
+      a
+        font-weight: 500
+        color: $lipstick-five
+    ul
+      margin-bottom: 30px
+    li
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.57
+      letter-spacing: 0.4px
+      color: $dark-three
+      a
+        font-weight: 500
+        color: $lipstick-five
+    .equipment__phone
+      justify-content: flex-start

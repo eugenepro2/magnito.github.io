@@ -3,11 +3,11 @@ header.header
   .header__toolbar
     .container
       .row.middle-xs
-        .col-md-2
+        .col-md-2.col-sm-5.center-sm.start-md
           a.header__mail(href="mailto:info@fabrikamagnitov.ru") 
             i.icon.icon-contact
             | info@fabrikamagnitov.ru
-        .col-md-7.flex.middle-xs
+        .col-md-7.flex.middle-xs.col-sm-7
           a.header__phone(href="tel:84957830407") 
             i.icon.icon-phone
             | 8 (495) 783-04-07
@@ -31,25 +31,35 @@ header.header
   .header__primary
     .container
       .row.middle-xs
-        .col-md-3
+        .col-md-3.col-sm-4.col-xs-6
           .logo
             img(src="img/logo.png", alt="")
-        .col-md-8
-          nav
-            ul
-              li.active
-                a(href="#") Онлайн заявка
-              li
-                a(href="#") Заказать просчёт
-              li
-                a(href="#") Технические требования
-              li
-                a(href="#") Задать вопрос
-        .col-md-1
-          .header__tools
-            .header__tools__search
-              i.icon.icon-search
-            .header__tools__burger
-              div
+        .col-md-9.col-sm-8.col-xs-6
+          .header__primary__block
+            nav
+              ul
+                li.active
+                  a(href="#") Онлайн заявка
+                li
+                  a(href="#") Заказать просчёт
+                li
+                  a(href="#") Технические требования
+                li
+                  a(href="#") Задать вопрос
+              ul.mobile
+                li
+                  a(href="#") Онлайн заявка
+                li
+                  a(href="#") Заказать просчёт
+              ul.mobile
+                li 
+                  a(href="#") Технические требования
+                li
+                  a(href="#") Задать вопрос
+            .header__tools
+              a(href="#").header__tools__search
+                i.icon.icon-search
+              .header__tools__burger
+                span
 
 //END header
