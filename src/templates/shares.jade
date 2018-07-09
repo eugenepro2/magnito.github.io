@@ -1,0 +1,34 @@
+---
+title: Акции и скидки
+---
+extends layouts/_layout
+block content
+  +breadcrumbs(['Главная', 'Акции'])
+  .shares
+    .container
+      .row
+        .col-xs-6
+          .block__img
+            .block__img__content
+              img(src="img/shares/shares-1.png", alt="")
+        .col-xs-6
+          .heading
+            h2 Акции и скидки
+          .shares__content
+            ul
+              li
+                a(href="#") Магнит 5х5 см 1000 шт - 5000 р.
+              li
+                a(href="#") Магнит 6х6 см 1000 шт - 6000 р.
+              li
+                a(href="#") Магнит с блокнотом! 1000 шт. - 10 000 р
+              li
+                a(href="#") Магнитные визитки 5х9 см 1000 шт. - 10 580 р.
+            p Наша компания регулярно проводит выгодные акции.
+            p Спец-предложения на продукцию компании – это отличный способ сэкономить и при этом получить качественную рекламную продукцию.
+            p Акция на магнит для холодильника – наглядное тому подтверждение. 
+            p Консультация и размещение заказа 
+              a(href="mailto:info@fabrikamagnitov.ru") info@fabrikamagnitov.ru
+          .shares__content__tel
+            a(href="tel:84957830407") 8 (495) 783-04-07
+  include ./shares/calculation
