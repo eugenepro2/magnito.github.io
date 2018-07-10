@@ -16,6 +16,7 @@ var swiper1 = new Swiper('.home-kinds__swiper', {
 
 //sentence
 var swiper2 = new Swiper('.swiper-sentence', {
+  spaceBetween: 40,
   pagination: {
     el: '.swiper-pagination-sentence',
     clickable: true,

@@ -1,7 +1,9 @@
 .intro
   margin-top: 60px
+  height: 640px
   +r(767)
     margin-top: 25px
+    height: 655px
   h4
     font-size: 30px
     font-weight: 500
@@ -21,6 +23,12 @@
       font-size: 56px
     +r(767)
       font-size: 42px
+    &.title-scondary
+      font-size: 70px
+      +r(1024)
+        font-size: 56px
+      +r(767)
+        font-size: 30px
   h3
     font-size: 56px
     color: $dark-two
@@ -30,6 +38,23 @@
       font-size: 32px
     +r(767)
       font-size: 24px
+    &.title-scondary
+      font-size: 55px
+      color: $lipstick
+      +r(1024)
+        font-size: 32px
+      +r(767)
+        font-size: 24px
+  b
+    font-size: 36px
+    color: $dark-two
+    letter-spacing: -0.6px
+    text-transform: uppercase
+    margin-top: 20px
+    +r(1024)
+      font-size: 30px
+    +r(767)
+      font-size: 20px
   p
     font-size: 15px
     line-height: 1.47
@@ -43,13 +68,20 @@
       padding: 0 40px
       font-size: 12px
       text-align: center
+      position: relative
+      left: 50%
+      transform: translate(-50%)
   .swiper-slide
+    padding: 20px 0
     background-repeat: no-repeat
-    background-size: cover
-    padding: 90px 0
+    background-size: 40%
+    background-position: 100% 50%
     +r(767)
+      background-position: 50% 77%
       .container
         padding: 0
+    +r(560)
+      background-size: 70%
     img
       max-width: 440px
       width: 100%
@@ -58,3 +90,6 @@
         padding-top: 50px
   .swiper-pagination
     margin-bottom: 20px
+  .swiper-container
+    background-repeat: no-repeat
+    background-size: cover
