@@ -5,10 +5,15 @@
   .heading
     margin-bottom: 50px
     justify-content: flex-start
+    position: relative
+    z-index: 2
   &__content
     position: relative
     padding: 60px 0
     padding-bottom: 85px
+    +r(1024)
+      box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
+      padding: 60px 15px
     &:before
       content: ''
       position: absolute
@@ -21,6 +26,8 @@
       box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
       z-index: 1
       display: block
+      +r(1024)
+        display: none
   .swiper-slide
     p
       font-size: 22px
@@ -30,6 +37,8 @@
       padding-bottom: 35px
       color: $greyish-brown-two
       max-width: 645px
+      +r(1024)
+        font-size: 18px
   .swiper-pagination
     text-align: right
   .swiper-button-prev, .swiper-button-next
@@ -51,6 +60,10 @@
     height: 640px
     padding: 30px
     +center-column
+    +r(1024)
+      position: relative
+      width: auto
+      height: auto
     &__block
       background-image: linear-gradient(to top, $purple, $lipstick-two)
       border-top-right-radius: 35px
@@ -58,12 +71,18 @@
       height: 321px
       width: 100%
       +center
+      +r(1024)
+        max-height: 270px
+        max-width: 270px
     h3
       font-size: 18px
       font-weight: bold
       letter-spacing: 0.5px
       color: $dark
       padding: 30px 0
+      +r(1024)
+        font-size: 16px
+        padding-bottom: 15px
     p
       font-size: 15px
       line-height: 1.47
@@ -71,6 +90,8 @@
       text-align: center
       color: $dark
       margin-bottom: 55px
+      +r(1024)
+        font-size: 14px
     a
       font-size: 15px
       font-weight: 500
@@ -82,7 +103,6 @@
       position: relative
       +center
       &:before
-        content: '+'
         position: absolute
         right: -80px
         +center
@@ -90,8 +110,13 @@
         height: 50px
         background: $greenish-teal
         border-radius: 100%
+        content: $icon-add
+        font-family: 'iconfont'
         color: $white
-        font-size: 40px
-        padding-bottom: 5px
-        font-family: serif
-        display: inline-flex
+        font-size: 20px
+        font-weight: 200
+        line-height: 1
+        +center
+        +r(1024)
+          width: 40px
+          height: 40px

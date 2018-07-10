@@ -1,12 +1,15 @@
 section.home-sentence
   .container
-    .row
+    .row.hidden-sm.hidden-xs
       .col-xs-12
         .heading
           h2 Что мы предлагаем? 
     .home-sentence__content
       .row
-        .col-xs-8
+        .col-xs-12.hidden-md
+          .heading
+            h2 Что мы предлагаем? 
+        .col-md-8.col-sm-6.col-xs-12
           .swiper-container.swiper-sentence
             .swiper-wrapper
               .swiper-slide
@@ -20,7 +23,7 @@ section.home-sentence
             i.icon.icon-right-arrow
           .swiper-button-prev.swiper-sentence-prev
             i.icon.icon-left-arrow
-        .col-xs-4
+        .col-md-4.col-sm-6.col-xs-12
           .home-sentence__info
             .home-sentence__info__block
               img(src="img/home/sentence-1.png", alt="")
