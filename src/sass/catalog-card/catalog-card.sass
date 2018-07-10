@@ -1,10 +1,19 @@
 .catalog-card
   padding-top: 90px
   background-color: #fbfbfb
+  overflow: hidden
   .home-hit__swiper
     padding-bottom: 100px
     background: $white
     padding-top: 120px
+    +r(767)
+      padding-top: 30px
+    .swiper-button-next
+      +r(767)
+        right: -20px
+    .swiper-button-prev
+      +r(767)
+        left: -20px
   .heading
     justify-content: flex-start
     h2
@@ -13,19 +22,31 @@
   &__block
     display: flex
     justify-content: space-between
+    +r(767)
+      flex-direction: column
   &__img
+    +r(767)
+      +center
+      margin-bottom: 20px
     img
       max-width: 360px
+      +r(767)
+        height: 193px
   &__size
     display: flex
     margin-bottom: 85px
     max-width: 370px
+    +r(767)
+      width: 100%
+      align-items: center
     p
       font-size: 16px
       line-height: 1.13
       letter-spacing: 0.4px
       color: $dark
       flex: 1
+      +r(767)
+        font-size: 12px
     span
       border-radius: 20px
       border: solid 1px $dark
@@ -39,6 +60,9 @@
       height: 40px
       position: relative
       cursor: pointer
+      +r(767)
+        font-size: 13px
+        width: 155px
       i
         font-size: 12px
         position: absolute
@@ -67,6 +91,9 @@
     background-color: $white
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.35)
     padding: 70px 30px
+    +r(1024)
+      padding: 30px
+      height: 100%
     h4
       font-size: 22px
       font-weight: bold
@@ -75,6 +102,9 @@
       text-align: center
       color: $lipstick-three
       margin-bottom: 50px
+      +r(1024)
+        font-size: 20px
+        margin-bottom: 20px
     tr
       border-bottom: 1px solid rgba($dark, 0.15)
       &:first-child
@@ -88,6 +118,8 @@
       letter-spacing: 0.6px
       text-align: center
       color: $dark
+      +r(1024)
+        font-size: 21px
       &:first-child
         text-align: left
       &:last-child
@@ -98,6 +130,8 @@
       line-height: 2.78
       letter-spacing: 0.5px
       text-align: center
+      +r(1024)
+        font-size: 18px
       color: $dark
       &:first-child
         text-align: left
@@ -108,7 +142,14 @@
     width: 345px
     margin-left: 30px
     margin-bottom: 90px
+    +r(767)
+      width: 165px
+      height: 165px
+      float: none
+      margin: 20px auto
     &__content
+      +r(767)
+        height: 100%
       img
         width: calc(100% - 30px)
         position: relative
@@ -119,6 +160,8 @@
     padding: 120px 0
     position: relative
     z-index: 1
+    +r(1024)
+      padding: 50px 15px
     .heading
       margin-bottom: 40px
     h2

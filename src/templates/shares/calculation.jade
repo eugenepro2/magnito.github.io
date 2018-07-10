@@ -1,7 +1,7 @@
 section.calculation
   .container
     .row.middle-xs
-      .col-xs-5
+      .col-md-5.col-sm-6.col-xs-12.first-sm
         .calculation__form
           form(action="")
             input(type="text" placeholder="Ваше Имя")
@@ -11,8 +11,9 @@ section.calculation
             input(type="submit" value="отправить").btn
             .calculation__checkbox
               input(type="checkbox" id="checkbox")
-              label(for="checkbox") Я согласен с политикой конфиденциальности
-      .col-xs-6
+              label(for="checkbox")
+                p Я согласен с политикой конфиденциальности
+      .col-md-6.col-sm-6.col-xs-12.first-xs
         .calculation__block
           .heading
             h2 Заказать расчёт

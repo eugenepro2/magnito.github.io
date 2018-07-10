@@ -7,11 +7,11 @@ block content
   .shares
     .container
       .row
-        .col-xs-6
+        .col-sm-6
           .block__img
             .block__img__content
               img(src="img/shares/shares-1.png", alt="")
-        .col-xs-6
+        .col-sm-6.col-xs-12
           .heading
             h2 Акции и скидки
           .shares__content
@@ -29,6 +29,9 @@ block content
             p Акция на магнит для холодильника – наглядное тому подтверждение. 
             p Консультация и размещение заказа 
               a(href="mailto:info@fabrikamagnitov.ru") info@fabrikamagnitov.ru
+          .shares__content__tel.hidden-sm.hidden-xs
+            a(href="tel:84957830407") 8 (495) 783-04-07
+        .col-xs-12.hidden-md.center-xs
           .shares__content__tel
             a(href="tel:84957830407") 8 (495) 783-04-07
   include ./shares/calculation

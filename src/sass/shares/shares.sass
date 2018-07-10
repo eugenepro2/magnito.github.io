@@ -1,13 +1,24 @@
 .shares
   padding: 80px 0
+  +r(767)
+    padding: 0
+    padding-bottom: 70px
   &.delivery
     .shares__content
       width: 400px 
       position: relative
       left: 50%
       transform: translate(-50%)
+      +r(767)
+        width: 100%
   .block__img
     margin-top: 100px
+    +r(767)
+      display: none
+    +r(1024)
+      height: 220px
+      .block__img__content
+        height: 100%
   .heading
     margin-bottom: 50px
   &__content
@@ -23,6 +34,8 @@
         letter-spacing: 0.6px
         text-align: center
         color: $lipstick-five
+        +r(1024)
+          font-size: 16px
     p
       font-size: 18px
       line-height: 1
@@ -30,6 +43,8 @@
       text-align: center
       color: $dark
       margin-bottom: 20px
+      +r(1024)
+        font-size: 14px
       a
         font-weight: 500
         color: $lipstick-eight
@@ -42,3 +57,5 @@
         letter-spacing: 1.7px
         text-align: center
         color: $lipstick-eight
+        +r(767)
+          font-size: 24px

@@ -1,5 +1,10 @@
 .equipment
   padding: 70px 0
+  +r(767)
+    padding: 20px 0
+  .heading
+    +r(767)
+      margin-bottom: 30px
   &__text
     padding-bottom: 60px
     p
@@ -11,12 +16,20 @@
       padding-bottom: 20px
   &__step
     padding-bottom: 70px
+    &__block
+      +r(767)
+        max-width: 170px
+        position: relative
+        left: 50%
+        transform: translate(-50%)
     p
       font-size: 14px
       font-weight: bold
       letter-spacing: 0.4px
       color: $dark
       position: relative
+      +r(1024)
+        padding-bottom: 35px
       span
         display: block
         position: absolute
@@ -38,8 +51,10 @@
       letter-spacing: 0.6px
       color: $lipstick-five
       margin-bottom: 25px
+      +r(767)
+        font-size: 15px
     p
-      font-size: 15px
+      font-size: 14px
       line-height: 1.47
       letter-spacing: 0.4px
       color: $dark
@@ -48,7 +63,27 @@
         font-weight: 500
         color: $lipstick-five
     .block__img
-      width: calc(100% - 25px)
+      float: left
+      width: 545px
+      height: 345px
+      margin-bottom: 35px
+      margin-right: 20px
+      &-secondary
+        float: right
+        margin-left: 20px
+        +r(767)
+          margin-left: 20px
+      &__content
+        height: 100%
+      +r(1024)
+        height: 225px
+        width: 345px
+        &__content
+          height: 100%
+      +r(767)
+        width: 250px
+        height: 177px
+        margin-left: 10px
   &__phone
     +center
     margin-bottom: 60px
@@ -59,3 +94,5 @@
       background-clip: content-box
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
+      +r(767)
+        font-size: 24px
