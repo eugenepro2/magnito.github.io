@@ -1,5 +1,6 @@
 .header
   box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.1)
+  position: relative
   &__toolbar
     width: 100%
     height: 50px
@@ -12,6 +13,7 @@
       display: none
   &__primary
     padding: 20px
+    border-bottom: 1px solid rgba($black, 0.15)
   &__mail
     font-size: 15px
     display: flex
@@ -149,6 +151,7 @@
       display: inline-flex
       position: relative
       z-index: 999
+      cursor: pointer
       &.active
         span
           background: transparent
@@ -156,10 +159,12 @@
             width: 30px
             transform: rotate(315deg)
             top: 0
+            background: #e61852
           &:after
             width: 30px
             transform: rotate(-315deg)
             top: 0
+            background: #e61852
       span
         width: 15px
         height: 2px
@@ -186,3 +191,69 @@
           background: $black-three
           right: 0
           transition: all 0.5s
+
+  &__menu
+    position: absolute
+    z-index: 2
+    top: 168px
+    background: $white
+    width: 100%
+    padding: 25px 0
+    display: none
+    &__block
+      &:hover
+        h4
+          transform: scale(1.05)
+          a, span
+            color: #e61852
+            &:before
+              background: #e61852
+      h4
+        padding-left: 30px
+        padding-top: 35px
+        +tr
+        a
+          font-size: 30px
+          font-weight: bold
+          line-height: 0.67
+          letter-spacing: 0.8px
+          color: #272d36
+          position: relative
+          padding-bottom: 15px
+          display: inline-block
+          +tr
+          &:before
+            content: ''
+            width: 300px
+            height: 1px
+            position: absolute
+            left: -40px
+            bottom: 0px
+            background: rgba($black, 0.15)
+            +tr
+        span
+          font-size: 12px
+          font-weight: bold
+          line-height: 1.67
+          letter-spacing: 0.3px
+          color: rgba(134, 145, 163, 0.75)
+          position: relative
+          top: -15px
+          +tr
+    &__block-list
+      display: none
+      margin-left: 90px
+      li
+        margin-top: 8px
+        a
+          font-size: 14px
+          letter-spacing: 0.4px
+          color: #475160
+          padding: 6px 12px
+          display: inline-block
+          +tr
+        &.active
+          a
+            color: $white
+            border-radius: 5px
+            background-color: $lipstick-three
