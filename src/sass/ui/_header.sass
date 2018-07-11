@@ -73,6 +73,7 @@
           color: $white
   .logo
     width: 240px
+    display: block
     +r(1024)
       width: 200px
     +r(767)
@@ -345,6 +346,11 @@
           +r(1024)
             font-size: 12px
         &.active
+          a
+            color: $white
+            border-radius: 5px
+            background-color: $lipstick-three
+        &:hover
           a
             color: $white
             border-radius: 5px

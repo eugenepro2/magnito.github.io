@@ -1,6 +1,14 @@
 import '../lib/selectize.min.js';
 import modal from 'jquery-modal';
 import rangeslider from 'rangeslider.js';
+import '../lib/maskedinput.js';
+
+
+//mask input
+$('input[type="tel"]').mask('+7 (999) 999-99-99');
+
+
+
 
 //search
 $('.header__tools__search').on('click', function() {

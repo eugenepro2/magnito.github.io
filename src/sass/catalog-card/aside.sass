@@ -51,13 +51,20 @@
     li
       display: inline-block
       margin-top: 8px
+      +tr
       a
         font-size: 16px
         letter-spacing: 0.4px
         color: $dark
         padding: 6px 12px
         display: inline-block
+        +tr
       &.active
+        border-radius: 5px
+        background-color: $lipstick-three
+        a
+          color: $white
+      &:hover
         border-radius: 5px
         background-color: $lipstick-three
         a
