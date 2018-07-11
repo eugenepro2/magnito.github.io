@@ -16,8 +16,9 @@ $('input[type="range"]').rangeslider({
 
 //size catalog
 $('.catalog-card__size span').on('click', function() {
-  $('.catalog-card__size__list').slideToggle();
+  $('.catalog-card__size__list').fadeToggle();
   $(this).find('i').toggleClass('active');
+  $(this).toggleClass('active');
 });
 
 
@@ -41,3 +42,14 @@ if($(window).width() > 767) {
     $(this).find('.header__menu__block-list').slideToggle();
   });
 }
+
+
+//calculation
+$('.calculation__form__text a').on('click', function() {
+  let btn = $(this);
+  event.preventDefault();
+  btn.fadeOut();
+  setTimeout(function() {
+    btn.next().fadeIn();
+  }, 370);
+});

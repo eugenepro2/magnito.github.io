@@ -60,6 +60,10 @@
       height: 40px
       position: relative
       cursor: pointer
+      +tr
+      &.active
+        border-bottom-left-radius: 0px
+        border-bottom-right-radius: 0px
       +r(767)
         font-size: 13px
         width: 155px
@@ -76,15 +80,18 @@
       top: 39px
       left: 50%
       transform: translate(-50%)
-      width: calc(100% - 30px)
+      width: 200px
       background: $white
       border: 1px solid #000
       border-top: none
+      border-bottom-left-radius: 20px
+      border-bottom-right-radius: 20px
+      background: #fbfbfb
       li
         padding: 10px
-        border-bottom: 1px solid #000
-        &:last-child
-          border-bottom: none
+        border-top: 1px solid #000
+        &:first-child
+          border-top: none
   &__table
     max-width: 370px
     border-radius: 25px
