@@ -3,13 +3,13 @@
   margin-bottom: -6px
   &__map
     margin-top: 100px
-    iframe
-      width: 100%
-      height: 700px
-      +r(1024) 
-        height: 590px
-      +r(767)
-        height: 790px
+    width: 100%
+    height: 700px
+    z-index: 1
+    +r(1024) 
+      height: 590px
+    +r(767)
+      height: 790px
   &__block
     border-top-right-radius: 25px
     border-top-left-radius: 25px
@@ -22,6 +22,7 @@
     position: absolute
     bottom: 7px
     +center-column
+    z-index: 2
     +r(1024)
       width: 365px
       padding: 30px
