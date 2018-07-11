@@ -135,27 +135,42 @@ a
   background: none
   border: none
   box-shadow: none
-  border-bottom: 2px solid $white
-  padding: 0
-  padding-bottom: 3px
+  border: 1px solid #2c323a
+  padding: 0 10px
   transition: all 0.3s
-  border-radius: 0
-  &:after
-    transition: all 0.3s
+  width: 130px
+  height: 35px
+  border-radius: 35px
+  +center
+  justify-content: flex-start
   &.input-active
     box-shadow: none
+    display: flex !important
+    border-radius: 20px 20px 0 0 !important
+    &:after
+      transform: rotate(180deg)
   input
     display: none !important
+.selectize-control.single .selectize-input:after
+  content: $icon-down-arrow-1
+  transition: all 0.3s
+  border: none
+  font-family: 'iconfont'
+  width: 12px
+  height: 6px
+  +center
+  font-size: 10px
 .selectize-dropdown
   border: 1px solid $white
   border-top: none
 .selectize-input>*, .selectize-dropdown [data-selectable]
-  font-size: 24px
-  font-weight: 300
-  line-height: 1.25
-  color: #000
-  +r(767)
-    font-size: 18px
+  font-size: 14px
+  letter-spacing: 0.4px
+  color: #272d36
+  +tr
 .selectize-dropdown .active
   background: $white
   color: #000
+.selectize-dropdown [data-selectable]
+  &:hover
+    color: $lipstick-five

@@ -1085,7 +1085,7 @@
         <div id="map" class="home-contacts__map"></div>
       </section>
       <div id="calculator" class="calculator">
-        <a href="#" rel="modal:close">
+        <a href="#" rel="modal:close" class="calculator__close">
           <span></span>
         </a>
         <h2>Онлайн заявка</h2>
@@ -1094,20 +1094,70 @@
           <div class="form__range">
             <div class="form__range__block">
               <input type="range" min="1" max="16" value="5">
+              <div class="form__range__block__top">
+                <span>100
+                  <p></p>
+                </span>
+                <span>250
+                  <p></p>
+                </span>
+                <span>500
+                  <p></p>
+                </span>
+                <span>1000
+                  <p></p>
+                </span>
+                <span>2500
+                  <p></p>
+                </span>
+                <span>5000
+                  <p></p>
+                </span>
+                <span>7500
+                  <p></p>
+                </span>
+                <span>10 000
+                  <p></p>
+                </span>
+                <span>20 000
+                  <p></p>
+                </span>
+                <span>25 000
+                  <p></p>
+                </span>
+                <span>50 000
+                  <p></p>
+                </span>
+                <span>75 000
+                  <p></p>
+                </span>
+                <span>100 000
+                  <p></p>
+                </span>
+                <span>250 000
+                  <p></p>
+                </span>
+                <span>500 000
+                  <p></p>
+                </span>
+                <span>1 млн
+                  <p></p>
+                </span>
+              </div>
             </div>
             <div class="form__range__result">
               <div class="row">
                 <div class="col-xs-4">
                   <p>Цена за 1 магнит</p>
-                  <span>5.5 ₽</span>
+                  <span class="coins">5.5 ₽</span>
                 </div>
                 <div class="col-xs-4">
                   <p>Цена за весь тираж</p>
-                  <span>13 750 ₽</span>
+                  <span class="coins-sum">13 750 ₽</span>
                 </div>
                 <div class="col-xs-4">
                   <p>Общий тираж</p>
-                  <span>2 500 шт.</span>
+                  <span class="edition">2 500 шт.</span>
                 </div>
                 <div class="col-xs-12">
                   <b>Данный модуль служит для предварительного расчёта. Для того, чтобы рассчитать точную стоимость изготовления магнитов - заполните Онлайн заявку.</b>
@@ -1117,48 +1167,90 @@
           </div>
           <h4>Онлайн заявка</h4>
           <div class="row">
-            <div class="col-xs-3">
-              <div class="form__block-application">
-                <p>Ширина магнита</p>
-                <input type="number">
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="form__block-application">
-                <p>Высота магнита</p>
-                <input type="number">
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="form__block-application">
-                <p>Толщина магнитного слоя</p>
-                <select>
-                  <option value="1">0.25 мм.</option>
-                  <option value="1">0.25 мм.1</option>
-                  <option value="1">0.25 мм.2</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="form__block-application">
-                <p>Тираж</p>
-                <input type="number">
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="form__block-application">
-                <p>Форма магнита</p>
-                <div class="form__radio">
-                  <input type="radio" id="radio-1" name="radio-1">
-                  <label for="radio-1">
-                    <p>Стандартная форма</p>
-                  </label>
+            <div class="col-xs-12">
+              <div class="form__block">
+                <div class="form__block-application">
+                  <p>Ширина магнита</p>
+                  <input type="number">
                 </div>
-                <div class="form__radio">
-                  <input type="radio" id="radio-2" name="radio-1">
-                  <label for="radio-2">
-                    <p>Индивидуальная форма</p>
-                  </label>
+                <div class="form__block-application">
+                  <p>Высота магнита</p>
+                  <input type="number">
+                </div>
+                <div class="form__block-application">
+                  <p>Толщина магнитного слоя</p>
+                  <select>
+                    <option value="1">0.25 мм.</option>
+                    <option value="2">0.25 мм.1</option>
+                    <option value="3">0.25 мм.2</option>
+                  </select>
+                </div>
+                <div class="form__block-application">
+                  <p>Тираж</p>
+                  <input type="number">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form__block">
+                <div class="form__block-application">
+                  <p>Форма магнита</p>
+                  <div class="form__radio">
+                    <input type="radio" id="radio-1" name="radio-1" checked>
+                    <label for="radio-1">
+                      <p>Стандартная форма</p>
+                    </label>
+                  </div>
+                  <div class="form__radio">
+                    <input type="radio" id="radio-2" name="radio-1">
+                    <label for="radio-2">
+                      <p>Индивидуальная форма</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="form__block-application">
+                  <p>Количество макетов в тираже</p>
+                  <input type="number">
+                </div>
+                <div class="form__block-application">
+                  <p>Форма магнита</p>
+                  <div class="form__radio">
+                    <input type="radio" id="radio-3" name="radio-2" checked>
+                    <label for="radio-3">
+                      <p>Россыпью в гофрокороб</p>
+                    </label>
+                  </div>
+                  <div class="form__radio">
+                    <input type="radio" id="radio-4" name="radio-2">
+                    <label for="radio-4">
+                      <p>В пакетики</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row center-xs">
+            <div class="col-xs-10 start-xs">
+              <div class="form__info">
+                <div class="form__info__input">
+                  <input type="text" placeholder="Ваше Имя*">
+                  <input type="tel" placeholder="Контактный телефон*">
+                </div>
+                <div class="form__info__input">
+                  <input type="email" placeholder="E-mail*">
+                  <input type="text" placeholder="Ваш город">
+                </div>
+                <div class="calculation__form__text">
+                  <a href="#">Добавить комментарий</a>
+                  <textarea placeholder="Добавить комментарий"></textarea>
+                  <input type="submit" value="отправить" class="btn">
+                  <div class="calculation__checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">
+                      <p>Я согласен с политикой конфиденциальности</p>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

@@ -28,11 +28,17 @@ $('select').selectize('options');
 //range
 $('input[type="range"]').rangeslider({
   polyfill: false,
-  // onSlide: function() {
-  //   day();
-  // },
+  onSlide: function() {
+    result();
+  },
 });
-
+function result() {
+  let val = $('input[type="range"]').val();
+  let coins = $('.coins');
+  let coinsSum = $('.coins-sum');
+  let edition = $('.edition');
+  coins.text(val + ' ₽');
+}
 //size catalog
 $('.catalog-card__size span').on('click', function() {
   $('.catalog-card__size__list').fadeToggle();

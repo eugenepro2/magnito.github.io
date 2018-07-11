@@ -1,5 +1,5 @@
 .calculator#calculator
-  a(href="#" rel="modal:close")
+  a(href="#" rel="modal:close").calculator__close
     span
   h2 Онлайн заявка
   h4 Модуль примерного расчета
@@ -7,51 +7,115 @@
     .form__range
       .form__range__block
         input(type="range" min="1" max="16" value="5")
+        .form__range__block__top
+          span 100
+            p
+          span 250
+            p
+          span 500
+            p
+          span 1000
+            p
+          span 2500
+            p
+          span 5000
+            p
+          span 7500
+            p
+          span 10 000
+            p
+          span 20 000
+            p
+          span 25 000
+            p
+          span 50 000
+            p
+          span 75 000
+            p
+          span 100 000
+            p
+          span 250 000
+            p
+          span 500 000
+            p
+          span 1 млн
+            p
       .form__range__result
         .row
           .col-xs-4
             p Цена за 1 магнит
-            span 5.5 ₽
+            span.coins 5.5 ₽
           .col-xs-4
             p Цена за весь тираж
-            span 13 750 ₽
+            span.coins-sum 13 750 ₽
           .col-xs-4
             p Общий тираж
-            span 2 500 шт.
+            span.edition 2 500 шт.
           .col-xs-12
             b Данный модуль служит для предварительного расчёта. Для того, чтобы рассчитать точную стоимость изготовления магнитов - заполните Онлайн заявку.
     h4 Онлайн заявка
     .row
-      .col-xs-3
-        .form__block-application
-          p Ширина магнита
-          input(type="number")
-      .col-xs-3
-        .form__block-application
-          p Высота магнита
-          input(type="number")
-      .col-xs-3
-        .form__block-application
-          p Толщина магнитного слоя
-          select
-            option(value="1") 0.25 мм.
-            option(value="1") 0.25 мм.1
-            option(value="1") 0.25 мм.2
-      .col-xs-3
-        .form__block-application
-          p Тираж
-          input(type="number")
-      .col-xs-4
-        .form__block-application
-          p Форма магнита
-          .form__radio
-            input(type="radio" id="radio-1" name="radio-1")
-            label(for="radio-1") 
-              p Стандартная форма
-          .form__radio
-            input(type="radio" id="radio-2" name="radio-1")
-            label(for="radio-2")
-              p Индивидуальная форма
+      .col-xs-12
+        .form__block
+          .form__block-application
+            p Ширина магнита
+            input(type="number")
+          .form__block-application
+            p Высота магнита
+            input(type="number")
+          .form__block-application
+            p Толщина магнитного слоя
+            select
+              option(value="1") 0.25 мм.
+              option(value="2") 0.25 мм.1
+              option(value="3") 0.25 мм.2
+          .form__block-application
+            p Тираж
+            input(type="number")
+      .col-xs-12
+        .form__block
+          .form__block-application
+            p Форма магнита
+            .form__radio
+              input(type="radio" id="radio-1" name="radio-1" checked)
+              label(for="radio-1") 
+                p Стандартная форма
+            .form__radio
+              input(type="radio" id="radio-2" name="radio-1")
+              label(for="radio-2")
+                p Индивидуальная форма
+          .form__block-application
+            p Количество макетов в тираже
+            input(type="number")
+          .form__block-application
+            p Форма магнита
+            .form__radio
+              input(type="radio" id="radio-3" name="radio-2" checked)
+              label(for="radio-3") 
+                p Россыпью в гофрокороб
+            .form__radio
+              input(type="radio" id="radio-4" name="radio-2")
+              label(for="radio-4")
+                p В пакетики
+    .row.center-xs
+      .col-xs-10.start-xs
+        .form__info
+          .form__info__input
+            input(type="text" placeholder="Ваше Имя*")
+            input(type="tel" placeholder="Контактный телефон*")
+          .form__info__input
+            input(type="email" placeholder="E-mail*")
+            input(type="text" placeholder="Ваш город")
+          .calculation__form__text
+            a(href="#") Добавить комментарий
+            textarea(placeholder="Добавить комментарий")
+            input(type="submit" value="отправить").btn
+            .calculation__checkbox
+              input(type="checkbox" id="checkbox")
+              label(for="checkbox")
+                p Я согласен с политикой конфиденциальности
+          
+
       
 
 .search
