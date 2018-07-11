@@ -128,3 +128,34 @@ a
         cursor: default
         i
           display: none
+
+
+
+.selectize-input
+  background: none
+  border: none
+  box-shadow: none
+  border-bottom: 2px solid $white
+  padding: 0
+  padding-bottom: 3px
+  transition: all 0.3s
+  border-radius: 0
+  &:after
+    transition: all 0.3s
+  &.input-active
+    box-shadow: none
+  input
+    display: none !important
+.selectize-dropdown
+  border: 1px solid $white
+  border-top: none
+.selectize-input>*, .selectize-dropdown [data-selectable]
+  font-size: 24px
+  font-weight: 300
+  line-height: 1.25
+  color: #000
+  +r(767)
+    font-size: 18px
+.selectize-dropdown .active
+  background: $white
+  color: #000

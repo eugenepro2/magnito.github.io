@@ -1,6 +1,18 @@
 import '../lib/selectize.min.js';
 import modal from 'jquery-modal';
+import rangeslider from 'rangeslider.js';
 
+//select
+$('select').selectize('options');
+
+
+//range
+$('input[type="range"]').rangeslider({
+  polyfill: false,
+  // onSlide: function() {
+  //   day();
+  // },
+});
 
 //size catalog
 $('.catalog-card__size span').on('click', function() {

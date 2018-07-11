@@ -1087,7 +1087,87 @@
             frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
-      <div id="calculator" class="calculator"></div>
+      <div id="calculator" class="calculator">
+        <a href="#" rel="modal:close">
+          <span></span>
+        </a>
+        <h2>Онлайн заявка</h2>
+        <h4>Модуль примерного расчета</h4>
+        <form action="" class="form">
+          <div class="form__range">
+            <div class="form__range__block">
+              <input type="range" min="1" max="16" value="5">
+            </div>
+            <div class="form__range__result">
+              <div class="row">
+                <div class="col-xs-4">
+                  <p>Цена за 1 магнит</p>
+                  <span>5.5 ₽</span>
+                </div>
+                <div class="col-xs-4">
+                  <p>Цена за весь тираж</p>
+                  <span>13 750 ₽</span>
+                </div>
+                <div class="col-xs-4">
+                  <p>Общий тираж</p>
+                  <span>2 500 шт.</span>
+                </div>
+                <div class="col-xs-12">
+                  <b>Данный модуль служит для предварительного расчёта. Для того, чтобы рассчитать точную стоимость изготовления магнитов - заполните Онлайн заявку.</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Онлайн заявка</h4>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="form__block-application">
+                <p>Ширина магнита</p>
+                <input type="number">
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form__block-application">
+                <p>Высота магнита</p>
+                <input type="number">
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form__block-application">
+                <p>Толщина магнитного слоя</p>
+                <select>
+                  <option value="1">0.25 мм.</option>
+                  <option value="1">0.25 мм.1</option>
+                  <option value="1">0.25 мм.2</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="form__block-application">
+                <p>Тираж</p>
+                <input type="number">
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form__block-application">
+                <p>Форма магнита</p>
+                <div class="form__radio">
+                  <input type="radio" id="radio-1" name="radio-1">
+                  <label for="radio-1">
+                    <p>Стандартная форма</p>
+                  </label>
+                </div>
+                <div class="form__radio">
+                  <input type="radio" id="radio-2" name="radio-1">
+                  <label for="radio-2">
+                    <p>Индивидуальная форма</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
       <footer class="footer">
         <div class="footer__nav">
           <div class="container">
