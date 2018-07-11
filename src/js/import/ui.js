@@ -1,3 +1,6 @@
+import '../lib/selectize.min.js';
+import modal from 'jquery-modal';
+
 
 //size catalog
 $('.catalog-card__size span').on('click', function() {
@@ -15,11 +18,14 @@ $('.aside h4').on('click', function() {
 
 
 //header-menu
+
 $('.header__tools__burger').on('click', function() {
   $(this).toggleClass('active');
   $('.header__menu').fadeToggle();
 });
 
-$('.header__menu__block').hover(function() {
-  $(this).find('.header__menu__block-list').slideToggle();
-});
+if($(window).width() > 767) {
+  $('.header__menu__block').hover(function() {
+    $(this).find('.header__menu__block-list').slideToggle();
+  });
+}

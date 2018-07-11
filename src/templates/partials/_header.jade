@@ -64,9 +64,21 @@ header.header
   .header__menu
     .container
       .row
-        .col-xs-7
+        .col-xs-5.hidden-sm.hidden-md
+          ul.header__menu__nav
+            li.active
+              a(href="#") Онлайн заявка
+            li
+              a(href="#") Заказать просчёт
+        .col-xs-7.hidden-sm.hidden-md
+          ul.header__menu__nav
+            li
+              a(href="#") Технические требования
+            li
+              a(href="#") Задать вопрос
+        .col-md-7.col-sm-6.col-xs-12.last-xs
           .header__menu__info
-            img(src="img/home/header-menu.png", alt="")
+            img(src="img/home/header-menu.png", alt="").hidden-xs
             .header__menu__social
               ul
                 li
@@ -89,7 +101,7 @@ header.header
                     i.icon.icon-od
               p © <span>FabrikaMagnitov 2018.</span> Все права защищены.
               p Создание и продвижение сайтов <span>WEB Алгоритм</span>
-        .col-xs-5
+        .col-md-5.col-sm-6.col-xs-12.last-sm
           .header__menu__block
             h4
               span 01
@@ -306,4 +318,13 @@ header.header
                 a(href="#") Магниты с логотипом
               li
                 a(href="#") Магниты с видами городов    
+        .col-xs-12.hidden-sm.hidden-md
+          .header__menu__communication
+            a(href="tel:84957830407").tel
+              i.icon.icon-phone
+              | 8 (495) 783-04-07
+            a(href="#").btn Заказать звонок
+            a(href="mailto:info@fabrikamagnitov.ru").mail
+              i.icon.icon-contact
+              | info@fabrikamagnitov.ru
 //END header
