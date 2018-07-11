@@ -2,6 +2,17 @@ import '../lib/selectize.min.js';
 import modal from 'jquery-modal';
 import rangeslider from 'rangeslider.js';
 
+//search
+$('.header__tools__search').on('click', function() {
+  $('.search').addClass('active');
+  $('.search').find('input[type="text"]').focus();
+});
+$('.search__close').on('click', function() {
+  $('.search').removeClass('active');
+});
+
+
+
 //select
 $('select').selectize('options');
 

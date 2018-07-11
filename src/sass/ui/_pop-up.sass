@@ -138,3 +138,79 @@
           color: #e61852
           &:before
             background: $lipstick-seven
+
+
+
+.search
+  position: absolute
+  top: -200px
+  width: 100%
+  height: 170px
+  background: $white
+  z-index: 10
+  box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.1)
+  +tr
+  +r(767)
+    height: 100px
+  &.active
+    top: 0
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    .form
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      padding-right: 50px
+      +r(767)
+        padding-right: 10px
+      input[type=text]
+        width: 100%
+        font-size: 58px
+        color: $charcoal-grey-two
+        +placeholder-color($charcoal-grey-two)
+        +r(767)
+          font-size: 24px
+      input[type=submit]
+        +r(767)
+          font-size: 16px
+          height: 35px
+          padding: 0 15px
+          text-transform: none
+  &__close
+    width: 30px
+    height: 30px
+    position: relative
+    &:hover
+      span
+        &:after, &:before
+          background: $lipstick-five
+    span
+      width: 30px
+      height: 30px
+      display: block
+      position: relative
+      margin-top: 13px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        transform: rotate(45deg)
+        width: 30px
+        height: 2px
+        background: $greyish-brown
+        +tr
+      &:after
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        transform: rotate(-45deg)
+        width: 30px
+        height: 2px
+        background: $greyish-brown
+        +tr
