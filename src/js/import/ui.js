@@ -1,6 +1,6 @@
 import '../lib/selectize.min.js';
 import modal from 'jquery-modal';
-import rangeslider from 'rangeslider.js';
+import Rangeslider from 'rangeslider.js';
 import '../lib/maskedinput.js';
 
 

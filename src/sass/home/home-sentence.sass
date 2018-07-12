@@ -19,8 +19,7 @@
       margin: 0 10px
     +r(767)
       box-shadow: none
-    &:before
-      content: ''
+    &__before
       position: absolute
       left: -30px
       top: 54%
@@ -32,8 +31,20 @@
       box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
       z-index: 1
       display: block
+      overflow: hidden
+      &:before
+        content: ''
+        background-image: linear-gradient(to right, #b91433, #e75875)
+        opacity: 0
+        +coverdiv
+        +tr
       +r(1024)
         display: none
+      &.red
+        &:before
+          opacity: 1
+  .swiper-slide.red p
+    color: $white
   &__text
     +r(1024)
       padding-left: 20px
@@ -107,7 +118,7 @@
       line-height: 1.47
       letter-spacing: 0.4px
       text-align: center
-      color: $dark
+      color: $dark !important
       margin-bottom: 55px
       +r(1024)
         font-size: 14px

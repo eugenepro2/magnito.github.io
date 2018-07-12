@@ -25,6 +25,15 @@ var swiper2 = new Swiper('.swiper-sentence', {
     nextEl: '.swiper-sentence-next',
     prevEl: '.swiper-sentence-prev',
   },
+  on: {
+    slideChangeTransitionEnd: function() {
+      if ($('.swiper-slide-active').hasClass('red')) {
+        $('.home-sentence__content__before').addClass('red');
+      } else{
+        $('.home-sentence__content__before').removeClass('red');
+      }
+    }
+  }
 });
 
 //hit
