@@ -272,7 +272,7 @@
         span
           color: #e61852
     &__block
-      &:hover
+      &:hover, &.active
         h4
           transform: scale(1.05)
           +r(767)
@@ -283,6 +283,9 @@
               color: #272d36
             &:before
               background: #e61852
+      &.active
+        i
+          transform: rotate(180deg)
       h4
         padding-left: 30px
         padding-top: 35px
@@ -301,6 +304,10 @@
           padding-bottom: 15px
           display: inline-block
           +tr
+          i
+            font-size: 20px
+            margin-left: 10px
+            +tr
           +r(1024)
             font-size: 20px
           +r(767)

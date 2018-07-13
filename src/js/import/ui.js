@@ -74,7 +74,9 @@ $('.header__tools__burger').on('click', function() {
 });
 
 if($(window).width() > 767) {
-  $('.header__menu__block').hover(function() {
+  $('.header__menu__block').on('click', function() {
+    event.preventDefault();
+    $(this).toggleClass('active');
     $(this).find('.header__menu__block-list').slideToggle();
   });
 }
