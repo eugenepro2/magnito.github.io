@@ -1,8 +1,12 @@
 .intro
   margin-top: 60px
   height: 645px
+  +r(1024)
+    margin-top: 30px
+    height: 515px
   +r(767)
     margin-top: 25px
+    height: 645px
   h4
     font-size: 30px
     font-weight: 500
@@ -93,6 +97,11 @@
       top: 50%
       transform: translate(0, -50%)
       z-index: -1
+      +r(1024)
+        max-width: 310px
+        top: 185px
+        transform: none
+        right: 30px
       +r(767)
         margin-top: 50px
         height: 200px

@@ -81,9 +81,17 @@ if($(window).width() > 767) {
   });
 }
 
+$(document).mouseup(function(e) {
+  var block = $('.header__menu, .header__tools__burger');
+  if (!block.is(e.target) && block.has(e.target).length === 0) { 
+    $('.header__menu').fadeOut();
+    $('.header__tools__burger').removeClass('active');
+  }
+});
+
 
 //calculation
-$('.calculation__form__text a, .question .form__text a').on('click', function() {
+$('.calculation__form__text a, .calculation-order .form__text a').on('click', function() {
   let btn = $(this);
   event.preventDefault();
   btn.fadeOut();

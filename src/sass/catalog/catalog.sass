@@ -2,14 +2,16 @@
   padding-top: 90px
   background-color: #fbfbfb
   overflow: hidden
-  +r(767)
+  +r(1024)
     background: none
+    padding-top: 30px
+  +r(767)
     padding-top: 0
   .home-hit__swiper
     padding-bottom: 100px
     background: $white
     padding-top: 120px
-    +r(767)
+    +r(1024)
       padding-top: 30px
       padding-bottom: 25px
     .swiper-button-next
@@ -20,13 +22,15 @@
         left: 5px
   .heading
     justify-content: flex-start
+    +r(1024)
+      margin-bottom: 50px
     +r(767)
       margin-bottom: 30px
-    h2
+    h2, h1
       line-height: 1
       text-align: left
       padding-bottom: 10px
-      a
+      span
         color: $lipstick-five
   a.btn
     margin-top: 30px
@@ -39,6 +43,9 @@
     width: 345px
     margin-left: 30px
     margin-bottom: 90px
+    +r(1024)
+      width: 315px
+      height: 315px
     +r(767)
       display: none
     &__content
@@ -50,7 +57,7 @@
         transform: translate(-50%, -50%)
   &__filter
     margin-bottom: 80px
-    +r(767)
+    +r(1024)
       margin-bottom: 40px
     .col-xs-6
       +r(767)
@@ -71,8 +78,9 @@
         min-height: 230px
         height: auto
       +r(767)
-        min-height: 150px
+        min-height: 130px
         margin-bottom: 20px
+        padding: 15px 10px
       &:hover
         transform: scale(1.07)
         box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.25)
@@ -81,7 +89,7 @@
         +r(1024)
           height: 130px
         +r(767)
-          height: 85px
+          height: 70px
       p
         font-size: 18px
         font-weight: bold
@@ -112,11 +120,17 @@
     border-bottom: 1px solid rgba($dark, 0.15)
     padding-bottom: 25px
     padding-top: 70px
+    +r(1024)
+      padding: 40px 15px 0px 0
     +r(767)
       padding-top: 30px
       padding-bottom: 0
+      padding-right: 0
       h2
         font-size: 20px !important
+    .heading
+      +r(1024)
+        margin-bottom: 40px
     &:last-child
       border-bottom: none
     &-secondary
@@ -130,7 +144,9 @@
       letter-spacing: 0.4px
       color: $dark-three
       padding-bottom: 25px
-      a
+      +r(1024)
+        font-size: 14px
+      span
         font-weight: 500
         color: $lipstick-five
     ul
@@ -151,5 +167,6 @@
         a
           font-size: 60px
       +r(767)
+        margin: 0 0 25px
         a
           font-size: 30px

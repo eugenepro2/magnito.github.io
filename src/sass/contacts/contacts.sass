@@ -2,6 +2,9 @@
   padding-top: 120px
   +r(1024)
     padding-top: 20px
+  .heading
+    +r(1024)
+      margin-bottom: 30px
   h3
     font-size: 22px
     font-weight: bold
@@ -27,6 +30,8 @@
     +r(767)
       font-size: 16px
       padding-bottom: 30px
+      line-height: 1.4
+      padding-bottom: 10px
   p
     span
       font-size: 18px
@@ -55,8 +60,12 @@
   &__map
     margin-bottom: 120px
     height: 370px
+    +r(1024)
+      height: 280px
+      margin-bottom: 55px
     +r(767)
       margin-bottom: 50px
+      padding-top: 20px
     iframe
       width: 100%
       height: 100%
