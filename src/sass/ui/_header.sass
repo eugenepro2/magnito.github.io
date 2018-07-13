@@ -151,8 +151,12 @@
       width: 90px
     &__search
       position: relative
+      &:hover
+        i
+          color: $lipstick
       i
         color: $black-three
+        +tr
       &:before
         content: ''
         width: 2px
@@ -170,6 +174,9 @@
       position: relative
       z-index: 5
       cursor: pointer
+      &:hover
+        span, span:before, span:after
+          background: $lipstick
       &.active
         span
           background: transparent
@@ -191,6 +198,7 @@
         position: relative
         left: 15px
         top: 15px
+        +tr
         &:before
           content: ''
           position: absolute
