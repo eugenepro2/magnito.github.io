@@ -203,6 +203,8 @@
     &-secondary
       float: right
       margin-left: 30px
+      +r(767)
+        right: 5px !important
     &__content
       height: 100%
     +r(1024)
@@ -214,8 +216,10 @@
       width: 270px
       height: 160px
       top: 0
-      right: -15px
+      margin: 0 auto
       margin-bottom: 25px
+      float: none
+      right: -5px
   &__phone
     +center
     margin-bottom: 60px
