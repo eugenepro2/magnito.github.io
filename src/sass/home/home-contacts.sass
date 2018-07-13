@@ -1,6 +1,8 @@
 .home-contacts
   position: relative
   margin-bottom: -6px
+  +r(767)
+    margin-top: -50px
   &__map
     margin-top: 100px
     width: 100%
@@ -9,7 +11,7 @@
     +r(1024) 
       height: 590px
     +r(767)
-      height: 790px
+      height: 740px
   &__block
     border-top-right-radius: 25px
     border-top-left-radius: 25px
@@ -32,7 +34,7 @@
     +r(767)
       width: calc(100% - 40px)
       left: 20px
-      padding: 30px 10px
+      padding: 30px 10px 0
       top: 40px
       bottom: auto
     .heading
@@ -53,6 +55,8 @@
       +r(1024)
         font-size: 16px
         padding-bottom: 20px
+      +r(767)
+        line-height: 1.05
     p
       span
         font-size: 22px
@@ -78,6 +82,8 @@
         width: 100%
     span
       font-weight: 300
+      +r(767)
+        line-height: 1.7
     b
       font-weight: 500
       line-height: 1.36
@@ -89,3 +95,5 @@
       top: 10px
       +r(1024)
         top: 0
+      +r(767)
+        font-size: 20px
