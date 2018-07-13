@@ -18,14 +18,12 @@
   &__content
     position: relative
     padding-bottom: 85px
-    // +r(1024)
-    //   box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
-    //   padding: 30px 0 0
-    //   margin: 0 10px
-    // +r(767)
-    //   box-shadow: none
-    //   padding-top: 0
-    //   margin: 0
+    +r(1024)
+      padding: 30px 0 0
+      margin: 0 10px
+    +r(767)
+      padding-top: 0
+      margin: 0
     &__before
       position: absolute
       left: -30px
@@ -53,7 +51,7 @@
         top: 0
         transform: translate(-50%)
         +r(767)
-          display: none
+          box-shadow: none
       &.red
         &:before
           opacity: 1
@@ -177,8 +175,8 @@
       padding: 10px
       padding-bottom: 150px
     +r(767)
-      padding: 15px 10px 70px
-      margin-right: -7px
+      padding: 15px 5px 70px
+      margin-right: 0px
   .swiper-pagination
     bottom: 140px
     +r(1024)
