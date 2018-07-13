@@ -25,7 +25,7 @@
               <div class="col-md-7 flex middle-xs col-sm-7">
                 <a href="tel:84957830407" class="header__phone">
                   <i class="icon icon-phone"></i>8 (495) 783-04-07</a>
-                <a href="#" class="header__callback">Заказать звонок</a>
+                <a href="#call-order" rel="modal:open" class="header__callback">Заказать звонок</a>
               </div>
               <div class="col-md-3">
                 <div class="header__social">
@@ -78,7 +78,7 @@
                         <a href="#">Технические требования</a>
                       </li>
                       <li>
-                        <a href="#">Задать вопрос</a>
+                        <a href="#ask-question" rel="modal:open">Задать вопрос</a>
                       </li>
                     </ul>
                     <ul class="mobile">
@@ -94,7 +94,7 @@
                         <a href="#">Технические требования</a>
                       </li>
                       <li>
-                        <a href="#">Задать вопрос</a>
+                        <a href="#ask-question" rel="modal:open">Задать вопрос</a>
                       </li>
                     </ul>
                   </nav>
@@ -527,7 +527,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="container">
-                <div class="row middle-sm">
+                <div class="row">
                   <div class="col-xs-12 start-sm center-xs">
                     <h4>На любой вкус</h4>
                     <h2>Магниты </h2>
@@ -541,7 +541,7 @@
             </div>
             <div class="swiper-slide">
               <div class="container">
-                <div class="row middle-sm">
+                <div class="row">
                   <div class="col-xs-12 start-sm center-xs">
                     <h4>В кратчайшие сроки</h4>
                     <h2 class="title-scondary">БОЛЬШОЙ ТИРАЖ </h2>
@@ -555,7 +555,7 @@
             </div>
             <div class="swiper-slide">
               <div class="container">
-                <div class="row middle-sm">
+                <div class="row">
                   <div class="col-xs-12 start-sm center-xs">
                     <h4>На все магниты</h4>
                     <h2 class="title-scondary">Демократичные
@@ -569,7 +569,7 @@
             </div>
             <div class="swiper-slide">
               <div class="container">
-                <div class="row middle-sm">
+                <div class="row">
                   <div class="col-xs-12 start-sm center-xs">
                     <h3 class="title-scondary">КОЛОССАЛЬНЫЙ ОПЫТ </h3>
                     <b>В ИЗГОТОВЛЕНИИ МАГНИТОВ </b>
@@ -582,7 +582,7 @@
             </div>
             <div class="swiper-slide">
               <div class="container">
-                <div class="row middle-sm">
+                <div class="row">
                   <div class="col-xs-12 start-sm center-xs">
                     <h3 class="title-scondary">КОЛОССАЛЬНЫЙ ОПЫТ </h3>
                     <b>В ИЗГОТОВЛЕНИИ МАГНИТОВ </b>
@@ -918,7 +918,7 @@
           </div>
           <div class="row">
             <div class="col-xs-12 center-xs">
-              <a href="#" class="btn btn-primary">Заказать просчёт</a>
+              <a href="#calculation-order" rel="modal:open" class="btn btn-primary">Заказать просчёт</a>
             </div>
           </div>
         </div>
@@ -1091,7 +1091,7 @@
         <div id="map" class="home-contacts__map"></div>
       </section>
       <div id="calculator" class="calculator">
-        <a href="#" rel="modal:close" class="calculator__close">
+        <a href="#" rel="modal:close" class="modal__close">
           <span></span>
         </a>
         <h2>Онлайн заявка</h2>
@@ -1261,6 +1261,53 @@
               </div>
             </div>
           </div>
+        </form>
+      </div>
+      <div id="calculation-order" class="modal calculation-order">
+        <a href="#" rel="modal:close" class="modal__close">
+          <span></span>
+        </a>
+        <form action="" class="form">
+          <h2>Заказать просчёт</h2>
+          <input type="text" placeholder="Ваше Имя">
+          <input type="email" placeholder="E-mail">
+          <input type="tel" placeholder="+7 (___) ___-__-__">
+          <div class="form__text">
+            <a href="#">Добавить комментарий</a>
+            <textarea placeholder="Добавить комментарий"></textarea>
+          </div>
+          <input type="submit" value="заказать просчёт" class="btn">
+          <div class="form__checkbox">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">
+              <p>Я согласен с политикой конфиденциальности</p>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div id="call-order" class="modal call-order">
+        <a href="#" rel="modal:close" class="modal__close">
+          <span></span>
+        </a>
+        <form action="" class="form">
+          <h2>Заказать звонок</h2>
+          <input type="text" placeholder="Ваше Имя">
+          <input type="tel" placeholder="+7 (___) ___-__-__">
+          <input type="submit" value="Заказать звонок" class="btn">
+        </form>
+      </div>
+      <div id="ask-question" class="modal ask-question">
+        <a href="#" rel="modal:close" class="modal__close">
+          <span></span>
+        </a>
+        <form action="" class="form">
+          <h2>Задать вопрос</h2>
+          <input type="text" placeholder="Ваше Имя">
+          <input type="tel" placeholder="+7 (___) ___-__-__">
+          <div class="form__text">
+            <textarea placeholder="Комментарий"></textarea>
+          </div>
+          <input type="submit" value="Отправить" class="btn">
         </form>
       </div>
       <div class="search">

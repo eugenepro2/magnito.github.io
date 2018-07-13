@@ -1,5 +1,5 @@
 .calculator#calculator
-  a(href="#" rel="modal:close").calculator__close
+  a(href="#" rel="modal:close").modal__close
     span
   h2 Онлайн заявка
   h4 Модуль примерного расчета
@@ -116,7 +116,46 @@
                 p Я согласен с политикой конфиденциальности
           
 
-      
+#calculation-order.modal.calculation-order
+  a(href="#" rel="modal:close").modal__close
+    span
+  form(action="").form
+    h2 Заказать просчёт
+    input(type="text" placeholder="Ваше Имя")
+    input(type="email" placeholder="E-mail")
+    input(type="tel" placeholder="+7 (___) ___-__-__")
+    .form__text
+      a(href="#") Добавить комментарий
+      textarea(placeholder="Добавить комментарий")
+    input(type="submit" value="заказать просчёт").btn
+    .form__checkbox
+      input(type="checkbox" id="checkbox1")
+      label(for="checkbox1")
+        p Я согласен с политикой конфиденциальности
+
+
+#call-order.modal.call-order
+  a(href="#" rel="modal:close").modal__close
+    span
+  form(action="").form
+    h2 Заказать звонок
+    input(type="text" placeholder="Ваше Имя")
+    input(type="tel" placeholder="+7 (___) ___-__-__")
+    input(type="submit" value="Заказать звонок").btn
+
+
+#ask-question.modal.ask-question
+  a(href="#" rel="modal:close").modal__close
+    span
+  form(action="").form
+    h2 Задать вопрос
+    input(type="text" placeholder="Ваше Имя")
+    input(type="tel" placeholder="+7 (___) ___-__-__")
+    .form__text
+      textarea(placeholder="Комментарий")
+    input(type="submit" value="Отправить").btn
+
+
 
 .search
   .container

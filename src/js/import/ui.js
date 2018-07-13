@@ -81,7 +81,7 @@ if($(window).width() > 767) {
 
 
 //calculation
-$('.calculation__form__text a').on('click', function() {
+$('.calculation__form__text a, .question .form__text a').on('click', function() {
   let btn = $(this);
   event.preventDefault();
   btn.fadeOut();
