@@ -28,9 +28,9 @@ var swiper2 = new Swiper('.swiper-sentence', {
   on: {
     slideChangeTransitionEnd: function() {
       if ($('.swiper-slide-active').hasClass('red')) {
-        $('.home-sentence__content__before').addClass('red');
+        $('.home-sentence__content__before, .swiper-pagination-sentence').addClass('red');
       } else{
-        $('.home-sentence__content__before').removeClass('red');
+        $('.home-sentence__content__before, .swiper-pagination-sentence').removeClass('red');
       }
     }
   }
