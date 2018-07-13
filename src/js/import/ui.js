@@ -1,5 +1,4 @@
 import '../lib/selectize.min.js';
-import modal from 'jquery-modal';
 import Rangeslider from 'rangeslider.js';
 import '../lib/maskedinput.js';
 
@@ -50,12 +49,6 @@ $('[rel="modal:open"]').on('click', function() {
 });
 
 
-//size catalog
-$('.catalog-card__size span').on('click', function() {
-  $('.catalog-card__size__list').fadeToggle();
-  $(this).find('i').toggleClass('active');
-  $(this).toggleClass('active');
-});
 
 
 //aside
@@ -100,30 +93,3 @@ $('.calculation__form__text a, .calculation-order .form__text a').on('click', fu
   }, 370);
 });
 
-
-//map
-
-google.maps.event.addDomListener(window, 'load', init);
-        
-function init() {
-  var coordinates = {lat: 55.894384, lng: 37.406382};
-  if($(window).width() > 767) {
-    var mapOptions = {
-      zoom: 16,
-      center: {lat: 55.894366, lng: 37.4026382},
-    };
-  }else {
-    var mapOptions = {
-      zoom: 16,
-      center: {lat: 55.896772, lng: 37.406382},
-    };
-  }
-  var mapElement = document.getElementById('map');
-  var map = new google.maps.Map(mapElement, mapOptions);
-  var image = 'img/pin.svg';
-  var beachMarker = new google.maps.Marker({
-    position: coordinates,
-    map: map,
-    icon: image
-  });
-}
