@@ -1,6 +1,7 @@
 .intro
   margin-top: 60px
   height: 645px
+  overflow: hidden
   +r(1024)
     margin-top: 30px
     height: 515px
@@ -12,6 +13,7 @@
     font-weight: 500
     letter-spacing: 0.8px
     color: $charcoal-grey-three
+    opacity: 0
     +r(1024)
       font-size: 22px
     +r(767)
@@ -22,6 +24,7 @@
     letter-spacing: normal
     color: $lipstick
     text-transform: uppercase
+    opacity: 0
     +r(1024)
       font-size: 56px
     +r(767)
@@ -32,11 +35,14 @@
         font-size: 56px
       +r(767)
         font-size: 30px
+  a
+    opacity: 0
   h4
     font-size: 56px
     color: $dark-two
     letter-spacing: -0.6px
     text-transform: uppercase
+    opacity: 0
     +r(1024)
       font-size: 32px
     +r(767)
@@ -69,6 +75,7 @@
     max-width: 410px
     margin-bottom: 50px
     margin-top: 30px
+    opacity: 0
     +r(767)
       padding: 0 30px
       margin-bottom: 30px
@@ -79,6 +86,8 @@
       left: 50%
       transform: translate(-50%)
   .swiper-slide
+    .container
+      overflow: hidden
     padding: 85px 0 20px
     background-repeat: no-repeat
     background-size: 40%
@@ -94,11 +103,11 @@
     img
       max-width: 440px
       width: 100%
-      position: absolute
-      right: 50px
-      top: 50%
-      transform: translate(0, -50%)
+      position: relative
+      top: -300px
+      float: right
       z-index: -1
+      opacity: 0
       +r(1024)
         max-width: 310px
         top: 185px
@@ -118,3 +127,6 @@
   .swiper-container
     background-repeat: no-repeat
     background-size: cover
+  h2, h3, h4, p, a, img
+    &.active
+      opacity: 1
