@@ -52,7 +52,7 @@ $('[rel="modal:open"]').on('click', function() {
 
 
 //aside
-$('.aside h4').on('click', function() {
+$('.aside h3').on('click', function() {
   event.preventDefault();
   $(this).next('.aside-list').slideToggle();
   $(this).find('i').toggleClass('active');
