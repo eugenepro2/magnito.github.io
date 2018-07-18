@@ -67,10 +67,10 @@ $('.header__tools__burger').on('click', function() {
 });
 
 if($(window).width() > 767) {
-  $('.header__menu__block').on('click', function() {
+  $('.header__menu__block i').on('click', function() {
     event.preventDefault();
     $(this).toggleClass('active');
-    $(this).find('.header__menu__block-list').slideToggle();
+    $(this).parents('.header__menu__block').find('.header__menu__block-list').slideToggle();
   });
 }
 
