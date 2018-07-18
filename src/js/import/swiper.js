@@ -4,59 +4,60 @@ import Swiper from 'swiper';
 $('[data-carousel="swiper"]').each( function() {
 
 
-
+  if($(window).width() > 767) {
   // Animate Function
-  function animated_swiper(selector, init) {
-    var animated = function animated() {
-      $(selector + ' [data-animate]').each(function() {
-        var anim = $(this).data('animate');
-        var delay = $(this).data('delay');
-        var duration = $(this).data('duration');
+    function animated_swiper(selector, init) {
+      var animated = function animated() {
+        $(selector + ' [data-animate]').each(function() {
+          var anim = $(this).data('animate');
+          var delay = $(this).data('delay');
+          var duration = $(this).data('duration');
 
-        $(this).removeClass('anim' + anim)
-          .addClass(anim + ' animated active')
-          .css({
-            webkitAnimationDelay: delay,
-            animationDelay: delay,
-            webkitAnimationDuration: duration,
-            animationDuration: duration
-          })
-          .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass(anim + ' animated');
-          });
+          $(this).removeClass('anim' + anim)
+            .addClass(anim + ' animated active')
+            .css({
+              webkitAnimationDelay: delay,
+              animationDelay: delay,
+              webkitAnimationDuration: duration,
+              animationDuration: duration
+            })
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+              $(this).removeClass(anim + ' animated');
+            });
        
+        });
+      };
+      animated();
+      // Make animated when slide change
+      init.on('slideChangeTransitionStart', function() {
+        $('.swiper-intro' + ' [data-animate]').removeClass('animated active');
       });
+      init.on('slideChangeTransitionEnd', animated);
     };
-    animated();
-    // Make animated when slide change
-    init.on('slideChangeTransitionStart', function() {
-      $('.swiper-intro' + ' [data-animate]').removeClass('animated active');
-    });
-    init.on('slideChangeTransitionEnd', animated);
-  };
 
-  // Initialization
-  var init = new Swiper('.swiper-intro', {
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
+    // Initialization
+    var init = new Swiper('.swiper-intro', {
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.swiper-pagination-intro',
+        clickable: true,
+      },
+    });
+    animated_swiper('.swiper-intro', init);
+  }
+});
+if($(window).width() < 768) {
+//intro
+  var swiperin = new Swiper('.swiper-intro', {
     pagination: {
       el: '.swiper-pagination-intro',
       clickable: true,
-    },
+    }
   });
-  animated_swiper('.swiper-intro', init);
-});
-
-//intro
-// var swiper = new Swiper('.swiper-intro', {
-//   pagination: {
-//     el: '.swiper-pagination-intro',
-//     clickable: true,
-//   }
-// });
-
+}
 //home-kinds
 var swiper1 = new Swiper('.home-kinds__swiper', {
   loop: true,

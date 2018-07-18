@@ -74,6 +74,8 @@
       font-size: 30px
     +r(767)
       font-size: 20px
+      text-align: center
+      display: block
   p
     font-size: 15px
     line-height: 1.47
@@ -124,6 +126,7 @@
         top: auto
         bottom: 0px
         transform: translate(50%, 0)
+        opacity: 1
       +r(400)
         margin-top: 40px
   .swiper-pagination
@@ -132,5 +135,8 @@
     background-repeat: no-repeat
     background-size: cover
   h2, h3, h4, p, a, img
+    +r(767)
+      opacity: 1
+      animation-delay: 0s !important
     &.active
       opacity: 1
