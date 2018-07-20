@@ -52,10 +52,11 @@ $('[rel="modal:open"]').on('click', function() {
 
 
 //aside
-$('.aside h3').on('click', function() {
+$('.aside .aside-categories').on('click', function(event) {
   event.preventDefault();
   $(this).next('.aside-list').slideToggle();
   $(this).find('i').toggleClass('active');
+  console.log('wfwef');
 });
 
 

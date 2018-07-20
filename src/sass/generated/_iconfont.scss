@@ -10,23 +10,24 @@
 }
 
 $icon-add: "\EA01";
-$icon-clock: "\EA02";
-$icon-contact: "\EA03";
-$icon-down-arrow-1: "\EA04";
-$icon-down-arrow: "\EA05";
-$icon-facebook: "\EA06";
-$icon-left-arrow: "\EA07";
-$icon-location: "\EA08";
-$icon-mail: "\EA09";
-$icon-od: "\EA0A";
-$icon-phone: "\EA0B";
-$icon-plus: "\EA0C";
-$icon-right-arrow-1: "\EA0D";
-$icon-right-arrow: "\EA0E";
-$icon-search: "\EA0F";
-$icon-twitter: "\EA10";
-$icon-vk: "\EA11";
-$icon-youtube: "\EA12";
+$icon-arrow-down-3: "\EA02";
+$icon-clock: "\EA03";
+$icon-contact: "\EA04";
+$icon-down-arrow-1: "\EA05";
+$icon-down-arrow: "\EA06";
+$icon-facebook: "\EA07";
+$icon-left-arrow: "\EA08";
+$icon-location: "\EA09";
+$icon-mail: "\EA0A";
+$icon-od: "\EA0B";
+$icon-phone: "\EA0C";
+$icon-plus: "\EA0D";
+$icon-right-arrow-1: "\EA0E";
+$icon-right-arrow: "\EA0F";
+$icon-search: "\EA10";
+$icon-twitter: "\EA11";
+$icon-vk: "\EA12";
+$icon-youtube: "\EA13";
 
 
 %icon {
@@ -46,6 +47,7 @@ $icon-youtube: "\EA12";
 }
 
 .icon-add:before { content: $icon-add; }
+.icon-arrow-down-3:before { content: $icon-arrow-down-3; }
 .icon-clock:before { content: $icon-clock; }
 .icon-contact:before { content: $icon-contact; }
 .icon-down-arrow-1:before { content: $icon-down-arrow-1; }
