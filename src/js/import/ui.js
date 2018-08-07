@@ -25,29 +25,102 @@ $('select').selectize('options');
 
 
 //range
-
 $('[rel="modal:open"]').on('click', function() {
   setTimeout(function() {
+    Calc();
     $('input[type="range"]').rangeslider({
       polyfill: false,
       onSlide: function() {
-        result();
+        Calc();
       },
     });
-    function result() {
-      let val = $('input[type="range"]').val();
-      let coins = $('.coins');
-      let coinsSum = $('.coins-sum');
-      let edition = $('.edition');
-      let spanVal = $('.form__range__block__top span');
-      coins.text(val + ' ₽');
-      spanVal.removeClass('active');
-      spanVal.eq(val).prev('span').addClass('active');
-    
-    }
   }, 50);
 });
 
+
+function Calc() {
+  let val = $('input[type="range"]').val();
+
+  let spanVal = $('.form__range__block__top span');
+  spanVal.removeClass('active');
+  let newVal = spanVal.eq(val).prev('span').text();
+  let i = parseFloat(newVal.replace(',','.').replace(/[^0-9.]/gim, ''));
+
+  if (isNaN(i)) {
+    i = 1000000;
+  }
+  
+  console.log(i);
+  
+
+  switch (i) {
+    case 100:
+      setValue(i, 18);
+      break;
+    case 250:
+      setValue(i, 10);
+      break;
+    case 500:
+      setValue(i, 8);
+      break;
+    case 1000:
+      setValue(i, 6.5);
+      break;
+    case 2500:
+      setValue(i, 5.5);
+      break;
+    case 5000:
+      setValue(i, 4.5);
+      break;
+    case 7500:
+      setValue(i, 3.5);
+      break;
+    case 10000:
+      setValue(i, 2.95);
+      break;
+    case 20000:
+      setValue(i, 1.85);
+      break;
+    case 25000:
+      setValue(i, 1.75);
+      break;
+    case 50000:
+      setValue(i, 1.35);
+      break;
+    case 75000:
+      setValue(i, 1.15);
+      break;
+    case 100000:
+      setValue(i, 1.09);
+      break;
+    case 250000:
+      setValue(i, 0.99);
+      break;
+    case 500000:
+      setValue(i, 0.89);
+      break;
+    case 1000000:
+      setValue(i, 0.79);
+      break;
+    
+
+  
+    default:
+      break;
+  }
+
+
+}
+
+function setValue(editionV, coinsV) {
+  let coins = $('.coins i');
+  let coinsSum = $('.coins-sum i');
+  let edition = $('.edition i');
+
+  coins.text(coinsV);
+  coinsSum.text((editionV * coinsV).toFixed(0));
+  edition.text(editionV);
+}
 
 
 
