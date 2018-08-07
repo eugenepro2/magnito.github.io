@@ -147,7 +147,6 @@ if($(window).width() > 767) {
     $(this).parents('.header__menu__block').find('.header__menu__block-list').slideToggle();
   });
 }
-
 $(document).mouseup(function(e) {
   var block = $('.header__menu, .header__tools__burger');
   if (!block.is(e.target) && block.has(e.target).length === 0) { 
